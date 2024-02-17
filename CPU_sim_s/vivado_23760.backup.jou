@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sat May 14 14:41:13 2022
+# Process ID: 23760
+# Current directory: D:/Vivado/MyProject/CPU_sim_s
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent27040 D:\Vivado\MyProject\CPU_sim_s\CPU_sim.xpr
+# Log file: D:/Vivado/MyProject/CPU_sim_s/vivado.log
+# Journal file: D:/Vivado/MyProject/CPU_sim_s\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Vivado/MyProject/CPU_sim_s/CPU_sim.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+source cpu_tb.tcl
+current_wave_config {Untitled 1}
+add_wave {{/cpu_tb/u_cpu_top/clk_div}} 
+current_wave_config {Untitled 1}
+add_wave {{/cpu_tb/u_cpu_top/flag}} {{/cpu_tb/u_cpu_top/MAR_out}} {{/cpu_tb/u_cpu_top/ACC_out}} {{/cpu_tb/u_cpu_top/memory_out}} {{/cpu_tb/u_cpu_top/MBR_out}} {{/cpu_tb/u_cpu_top/PC_out}} {{/cpu_tb/u_cpu_top/IR_out}} {{/cpu_tb/u_cpu_top/BR_out}} {{/cpu_tb/u_cpu_top/ALU_out}} {{/cpu_tb/u_cpu_top/MR}} {{/cpu_tb/u_cpu_top/CU_out}} 
+relaunch_sim
+run all
+run all
+close_sim

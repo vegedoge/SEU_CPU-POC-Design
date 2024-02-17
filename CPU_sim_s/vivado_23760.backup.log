@@ -1,0 +1,285 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sat May 14 14:41:13 2022
+# Process ID: 23760
+# Current directory: D:/Vivado/MyProject/CPU_sim_s
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent27040 D:\Vivado\MyProject\CPU_sim_s\CPU_sim.xpr
+# Log file: D:/Vivado/MyProject/CPU_sim_s/vivado.log
+# Journal file: D:/Vivado/MyProject/CPU_sim_s\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Vivado/MyProject/CPU_sim_s/CPU_sim.xpr
+INFO: [Project 1-313] Project file moved from 'D:/Vivado/MyProject/CPU_sim' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Xilinx/Vivado2020/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:08 . Memory (MB): peak = 1018.270 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/MyProject/CPU_sim_s/CPU_sim.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado/Xilinx/Vivado2020/Vivado/2020.1/data/xsim/xsim.ini' copied to run dir:'D:/Vivado/MyProject/CPU_sim_s/CPU_sim.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/Vivado/MyProject/CPU_sim_s/CPU_sim.sim/sim_1/behav/xsim/ram_mem.mif'
+INFO: [SIM-utils-43] Exported 'D:/Vivado/MyProject/CPU_sim_s/CPU_sim.sim/sim_1/behav/xsim/ram_test2.coe'
+INFO: [SIM-utils-43] Exported 'D:/Vivado/MyProject/CPU_sim_s/CPU_sim.sim/sim_1/behav/xsim/rom_cm.mif'
+INFO: [SIM-utils-43] Exported 'D:/Vivado/MyProject/CPU_sim_s/CPU_sim.sim/sim_1/behav/xsim/rom_cm.coe'
+INFO: [SIM-utils-43] Exported 'D:/Vivado/MyProject/CPU_sim_s/CPU_sim.sim/sim_1/behav/xsim/ram.coe'
+INFO: [SIM-utils-43] Exported 'D:/Vivado/MyProject/CPU_sim_s/CPU_sim.sim/sim_1/behav/xsim/ram_mpy.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/MyProject/CPU_sim_s/CPU_sim.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/ip/rom_cm/sim/rom_cm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rom_cm
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/ip/ram_mem/sim/ram_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/ip/ila_0/sim/ila_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ila_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/ACC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ACC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/BR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BR
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/CAR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CAR
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/IR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IR
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/LED.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LED
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/MAR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MAR
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/MBR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MBR
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/ROM_cu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_cu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/cpu_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-2458] undeclared symbol wea, assumed default net type wire [D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/ram.v:37]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sim_1/new/cpu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/CPU_sim_s/CPU_sim.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/MyProject/CPU_sim_s/CPU_sim.sim/sim_1/behav/xsim'
+"xelab -wto 10edb80dd01046bdaaeb3cc799c50702 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Xilinx/Vivado2020/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 10edb80dd01046bdaaeb3cc799c50702 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3180] cannot find port 'number' on this module [D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sim_1/new/cpu_tb.v:42]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Vivado/MyProject/CPU_sim_s/CPU_sim.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/Vivado/MyProject/CPU_sim_s/CPU_sim.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1018.270 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/MyProject/CPU_sim_s/CPU_sim.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado/Xilinx/Vivado2020/Vivado/2020.1/data/xsim/xsim.ini' copied to run dir:'D:/Vivado/MyProject/CPU_sim_s/CPU_sim.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/Vivado/MyProject/CPU_sim_s/CPU_sim.sim/sim_1/behav/xsim/ram_mem.mif'
+INFO: [SIM-utils-43] Exported 'D:/Vivado/MyProject/CPU_sim_s/CPU_sim.sim/sim_1/behav/xsim/ram_test2.coe'
+INFO: [SIM-utils-43] Exported 'D:/Vivado/MyProject/CPU_sim_s/CPU_sim.sim/sim_1/behav/xsim/rom_cm.mif'
+INFO: [SIM-utils-43] Exported 'D:/Vivado/MyProject/CPU_sim_s/CPU_sim.sim/sim_1/behav/xsim/rom_cm.coe'
+INFO: [SIM-utils-43] Exported 'D:/Vivado/MyProject/CPU_sim_s/CPU_sim.sim/sim_1/behav/xsim/ram.coe'
+INFO: [SIM-utils-43] Exported 'D:/Vivado/MyProject/CPU_sim_s/CPU_sim.sim/sim_1/behav/xsim/ram_mpy.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/MyProject/CPU_sim_s/CPU_sim.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/ip/rom_cm/sim/rom_cm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rom_cm
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/ip/ram_mem/sim/ram_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/ip/ila_0/sim/ila_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ila_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/ACC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ACC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/BR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BR
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/CAR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CAR
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/IR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IR
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/LED.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LED
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/MAR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MAR
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/MBR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MBR
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/ROM_cu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_cu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/cpu_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-2458] undeclared symbol wea, assumed default net type wire [D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/ram.v:37]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sim_1/new/cpu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/MyProject/CPU_sim_s/CPU_sim.sim/sim_1/behav/xsim'
+"xelab -wto 10edb80dd01046bdaaeb3cc799c50702 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Xilinx/Vivado2020/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 10edb80dd01046bdaaeb3cc799c50702 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'ena' [D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/ROM_cu.v:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ila_0
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.ram_mem
+Compiling module xil_defaultlib.ram
+Compiling module xil_defaultlib.MAR
+Compiling module xil_defaultlib.MBR
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.IR
+Compiling module xil_defaultlib.ACC
+Compiling module xil_defaultlib.CAR
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.rom_cm
+Compiling module xil_defaultlib.ROM_cu
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.BR
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.LED
+Compiling module xil_defaultlib.cpu_top
+Compiling module xil_defaultlib.cpu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cpu_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1018.270 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Vivado/MyProject/CPU_sim_s/CPU_sim.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cpu_tb_behav -key {Behavioral:sim_1:Functional:cpu_tb} -tclbatch {cpu_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source cpu_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module cpu_tb.u_cpu_top.u_ram.u_ram.inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module cpu_tb.u_cpu_top.u_CU.u_ROM_cu.u_rom.inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cpu_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 1018.270 ; gain = 0.000
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/cpu_tb/u_cpu_top/clk_div}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/cpu_tb/u_cpu_top/flag}} {{/cpu_tb/u_cpu_top/MAR_out}} {{/cpu_tb/u_cpu_top/ACC_out}} {{/cpu_tb/u_cpu_top/memory_out}} {{/cpu_tb/u_cpu_top/MBR_out}} {{/cpu_tb/u_cpu_top/PC_out}} {{/cpu_tb/u_cpu_top/IR_out}} {{/cpu_tb/u_cpu_top/BR_out}} {{/cpu_tb/u_cpu_top/ALU_out}} {{/cpu_tb/u_cpu_top/MR}} {{/cpu_tb/u_cpu_top/CU_out}} 
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/MyProject/CPU_sim_s/CPU_sim.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado/Xilinx/Vivado2020/Vivado/2020.1/data/xsim/xsim.ini' copied to run dir:'D:/Vivado/MyProject/CPU_sim_s/CPU_sim.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/Vivado/MyProject/CPU_sim_s/CPU_sim.sim/sim_1/behav/xsim/ram_mem.mif'
+INFO: [SIM-utils-43] Exported 'D:/Vivado/MyProject/CPU_sim_s/CPU_sim.sim/sim_1/behav/xsim/ram_test2.coe'
+INFO: [SIM-utils-43] Exported 'D:/Vivado/MyProject/CPU_sim_s/CPU_sim.sim/sim_1/behav/xsim/rom_cm.mif'
+INFO: [SIM-utils-43] Exported 'D:/Vivado/MyProject/CPU_sim_s/CPU_sim.sim/sim_1/behav/xsim/rom_cm.coe'
+INFO: [SIM-utils-43] Exported 'D:/Vivado/MyProject/CPU_sim_s/CPU_sim.sim/sim_1/behav/xsim/ram.coe'
+INFO: [SIM-utils-43] Exported 'D:/Vivado/MyProject/CPU_sim_s/CPU_sim.sim/sim_1/behav/xsim/ram_mpy.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/MyProject/CPU_sim_s/CPU_sim.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cpu_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/MyProject/CPU_sim_s/CPU_sim.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/MyProject/CPU_sim_s/CPU_sim.sim/sim_1/behav/xsim'
+"xelab -wto 10edb80dd01046bdaaeb3cc799c50702 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Xilinx/Vivado2020/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 10edb80dd01046bdaaeb3cc799c50702 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'ena' [D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/ROM_cu.v:31]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module cpu_tb.u_cpu_top.u_ram.u_ram.inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module cpu_tb.u_cpu_top.u_CU.u_ROM_cu.u_rom.inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1018.270 ; gain = 0.000
+run all
+$stop called at time : 3020 ns : File "D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sim_1/new/cpu_tb.v" Line 53
+run all
+WARNING: [Simulator 45-29] Cannot open source file /wrk/2020.1/nightly/2020_05_27_2902540/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v: file does not exist.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat May 14 15:06:27 2022...

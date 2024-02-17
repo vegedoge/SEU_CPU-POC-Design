@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sat May 14 14:00:11 2022
+# Process ID: 15476
+# Current directory: D:/Vivado/MyProject/CPU_sim/CPU_sim.runs/impl_1
+# Command line: vivado.exe -log cpu_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source cpu_top.tcl -notrace
+# Log file: D:/Vivado/MyProject/CPU_sim/CPU_sim.runs/impl_1/cpu_top.vdi
+# Journal file: D:/Vivado/MyProject/CPU_sim/CPU_sim.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source cpu_top.tcl -notrace

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="rom_cm_synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1652456021">
+  <File Type="PA-TCL" Name="rom_cm.tcl"/>
+  <File Type="REPORTS-TCL" Name="rom_cm_reports.tcl"/>
+  <File Type="RDS-RDS" Name="rom_cm.vds"/>
+  <File Type="RDS-UTIL" Name="rom_cm_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="rom_cm_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="rom_cm.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/rom_cm">
+    <File Path="$PSRCDIR/sources_1/ip/rom_cm/rom_cm.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="rom_cm"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/rom_cm">
+    <File Path="$PSRCDIR/sources_1/ip/rom_cm/rom_cm.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="rom_cm"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

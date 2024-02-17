@@ -1,0 +1,114 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri Mar 18 17:08:05 2022
+# Process ID: 21528
+# Current directory: D:/Vivado/MyProject/POCexp
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22928 D:\Vivado\MyProject\POCexp\POCexp.xpr
+# Log file: D:/Vivado/MyProject/POCexp/vivado.log
+# Journal file: D:/Vivado/MyProject/POCexp\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Vivado/MyProject/POCexp/POCexp.xpr
+update_compile_order -fileset sources_1
+file mkdir D:/Vivado/MyProject/POCexp/POCexp.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/Vivado/MyProject/POCexp/POCexp.srcs/sim_1/new/POCexp_TB.v w ]
+add_files -fileset sim_1 D:/Vivado/MyProject/POCexp/POCexp.srcs/sim_1/new/POCexp_TB.v
+update_compile_order -fileset sim_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+close_design
+launch_simulation
+source POCexp.tcl
+update_compile_order -fileset sim_1
+run all
+run all
+close_sim
+launch_simulation
+source POCexp_TB.tcl
+run all
+close_sim
+launch_simulation
+source POCexp_TB.tcl
+run all
+close_sim
+launch_simulation
+source POCexp_TB.tcl
+run all
+current_wave_config {Untitled 4}
+add_wave {{/POCexp_TB/u_POCexp/u_Processor/ADDR}} 
+current_wave_config {Untitled 4}
+add_wave {{/POCexp_TB/u_POCexp/u_Processor/RW}} 
+current_wave_config {Untitled 4}
+add_wave {{/POCexp_TB/u_POCexp/u_Processor/handle}} 
+current_wave_config {Untitled 4}
+add_wave {{/POCexp_TB/u_POCexp/u_Processor/data}} 
+current_wave_config {Untitled 4}
+add_wave {{/POCexp_TB/u_POCexp/u_Processor/Dout}} 
+current_wave_config {Untitled 4}
+add_wave {{/POCexp_TB/u_POCexp/u_Processor/Din}} 
+run all
+relaunch_sim
+run all
+close_sim
+launch_simulation
+source POCexp_TB.tcl
+current_wave_config {Untitled 5}
+add_wave {{/POCexp_TB/u_POCexp/RW}} 
+current_wave_config {Untitled 5}
+add_wave {{/POCexp_TB/u_POCexp/IRQ}} 
+current_wave_config {Untitled 5}
+add_wave {{/POCexp_TB/u_POCexp/RDY}} 
+current_wave_config {Untitled 5}
+add_wave {{/POCexp_TB/u_POCexp/Din}} 
+current_wave_config {Untitled 5}
+add_wave {{/POCexp_TB/u_POCexp/Dout}} 
+current_wave_config {Untitled 5}
+add_wave {{/POCexp_TB/u_POCexp/TR}} 
+current_wave_config {Untitled 5}
+add_wave {{/POCexp_TB/u_POCexp/u_Processor/ADDR}} 
+run all
+current_wave_config {Untitled 5}
+add_wave {{/POCexp_TB/u_POCexp/u_Processor/handle}} 
+close_sim
+launch_simulation
+source POCexp_TB.tcl
+run all
+current_wave_config {Untitled 6}
+add_wave {{/POCexp_TB/u_POCexp/u_Processor/IRQ}} 
+current_wave_config {Untitled 6}
+add_wave {{/POCexp_TB/u_POCexp/u_Processor/RW}} 
+relaunch_sim
+run all
+current_wave_config {Untitled 6}
+add_wave {{/POCexp_TB/u_POCexp/u_Processor/ADDR}} 
+current_wave_config {Untitled 6}
+add_wave {{/POCexp_TB/u_POCexp/u_Processor/Din}} 
+current_wave_config {Untitled 6}
+add_wave {{/POCexp_TB/u_POCexp/u_Processor/handle}} 
+relaunch_sim
+run all
+current_wave_config {Untitled 6}
+add_wave {{/POCexp_TB/u_POCexp/u_POC/IRQ}} 
+current_wave_config {Untitled 6}
+add_wave {{/POCexp_TB/u_POCexp/u_Processor/Din_reg}} 
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+close_sim

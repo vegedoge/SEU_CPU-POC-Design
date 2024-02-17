@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri May 13 23:33:44 2022
+# Process ID: 25316
+# Current directory: D:/Vivado/MyProject/CPU_sim/CPU_sim.runs/rom_cm_synth_1
+# Command line: vivado.exe -log rom_cm.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source rom_cm.tcl
+# Log file: D:/Vivado/MyProject/CPU_sim/CPU_sim.runs/rom_cm_synth_1/rom_cm.vds
+# Journal file: D:/Vivado/MyProject/CPU_sim/CPU_sim.runs/rom_cm_synth_1\vivado.jou
+#-----------------------------------------------------------
+source rom_cm.tcl -notrace

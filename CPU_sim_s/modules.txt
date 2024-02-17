@@ -1,0 +1,214 @@
+//BR
+
+module BR (
+    input clk,
+    input reset,
+    input c7,
+    input MBR_in[15:0],
+    output BR_out[15:0]
+);
+reg BR_out_reg[15:0];
+always@(posedge clk)
+begin
+    if (!reset)
+        BR_out_reg <= 16'h0000;
+    else
+        BR_out_reg <= MBR_in;
+    assign BR_out <= BR_out_reg;
+    
+
+end
+endmodule
+
+//ALU
+module ALU (
+    input clk,
+    input reset,
+    input c_in[31:0],
+    input ACC_in[15:0],
+    input BR_in[15:0],
+    output flag3,
+    output MR[15:0],
+    reg ALU_out[15:0]
+
+);
+reg mult[31:0];
+reg alu[15:0];
+reg flag3_reg;
+reg MR_reg[15:0];
+
+
+always@(posedge clk)
+begin
+    alu<=ALU_out;
+    if(!reset)
+        ALU_out<=16'h0000;
+    else if(c_in[22]==1)
+        ALU_out<=BR_in;
+    else if(c_in[23]==1)
+        ALU_out<=ACC_in;
+    else if(c_in[9]==1)//加法
+        ALU_out<=ACC_in+BR_in;
+    else if(c_in[13]==1)//减法
+        ALU_out<=ACC_in-BR_in;
+    else if(c_in[15]==1)//和
+        ALU_out<=ACC_in&&BR_in;
+    else if(c_in[16]==1)//或
+        ALU_out<=ACC_in||BR_in;
+    else if(c_in[17]==1)//取反
+        ALU_out<=!BR_in;
+    else if(c_in[18]==1)//逻辑右移
+        ALU_out<={0,alu[15:1]};
+    else if(c_in[19]==1)//逻辑左移
+        ALU_out<={alu[14:0],0};
+    else if(c_in[20]==1)//算数右移
+        ALU_out<={alu[15],alu[15:1]}
+    else if(c_in[22]==1)//算数左移
+        ALU_out<={alu[15],alu[14:0]}
+    else if(c_in[26]==1)
+    begin
+        ALU_out<=mult[15:0];
+        MR<=mult[31:16];
+    end
+    else if(c_in[28]==1)//乘法
+    begin
+        mult<=ACC_in*BR_in;
+        flag3<=1;
+    end
+
+end
+endmodule
+
+
+
+//ACC
+module ACC(
+input clk,c8,c24,c27,reset,
+input [15:0] ALU_in,MBR_in,
+output [15:0] ACC_out,
+output flag1,flag4
+    );
+    reg [15:0] ACC_out1;
+    reg flag41;
+    reg flag11;
+always @(posedge clk) begin
+    if (reset==0) begin
+      ACC_out1<=0000000000000000;
+    end
+    else if(c8==1)begin
+      ACC_out1<=0000000000000000;
+    end
+    if (c24==1) begin
+    ACC_out1<=ALU_in;
+    flag41<=1;
+    end
+    else begin
+    flag41<=0;
+    end
+    if (c24==1)begin
+    ACC_out1<=MBR_in;
+    end
+    if (ACC_out1[15]==0) begin
+    flag11<=0;
+    end
+    else begin
+    flag11<=1;
+    end
+end
+assign flag4=flag41;
+assign flag1=flag11;
+assign ACC_out=ACC_out1;
+endmodule
+
+
+//IR
+module IR(
+input clk,reset,c4,
+input [7:0] MBR_in,
+output [7:0] IR_out
+    );
+ reg [7:0] IR_out1;
+always @(posedge clk) begin
+     if(reset==0) begin
+      IR_out1<=4'h00;
+     end
+     else if(c4==1) begin
+       IR_out1<=MBR_in;
+     end
+end
+assign IR_out=IR_out1;
+endmodule
+
+
+
+//MBR
+module MBR(
+input clk,c3,c11,reset,
+input [15:0] MEM_in,
+input [15:0] ACC_in,
+output [15:0] MBR_out
+    );
+reg [15:0] MBR_out1;
+always @(posedge clk) begin
+    if(reset==0) begin
+     MBR_out1<= 4'h0000;
+    end
+    else if(c3==1) begin
+      MBR_out1<=MEM_in;
+    end  
+    else if(c11==1) begin
+     MBR_out1<=ACC_in;
+    end
+end
+assign MBR_out=MBR_out1;
+endmodule
+
+//PC
+module PC(
+input clk,reset,c6,c14,
+input [7:0] MBR_in,
+output [7:0] PC_out
+    );
+reg [7:0] PC_out1;
+always @(posedge clk) begin
+    if(reset==0) begin
+    PC_out1<="00000000";
+    end
+    else if(c6==1) begin
+    PC_out1<=PC_out1+1;
+    end
+    else if(c14==1) begin
+    PC_out1<=MBR_in;
+    end
+end
+assign PC_out=PC_out1;
+endmodule
+
+
+//MAR  finished
+module MAR (
+    input clk,
+    input c5,//控制信号
+    input c10,
+    input reset,
+    input [7:0]PC_2_MAR,//PC导入MAR
+    input [7:0]MBR_2_MAR,//PC导入MBR
+    output [7:0]MAR_out
+);
+always @(posedge clk )
+begin
+    if(!reset)
+        MAR_out<=8'b00000000;
+    else if(c10==1)
+        MAR_out<=PC_2_MAR;
+    else if(c5==1)
+        MAR_out<=MBR_2_MAR;
+end
+    
+endmodule
+
+
+
+
+
+    

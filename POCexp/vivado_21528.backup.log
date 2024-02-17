@@ -1,0 +1,917 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri Mar 18 17:08:05 2022
+# Process ID: 21528
+# Current directory: D:/Vivado/MyProject/POCexp
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22928 D:\Vivado\MyProject\POCexp\POCexp.xpr
+# Log file: D:/Vivado/MyProject/POCexp/vivado.log
+# Journal file: D:/Vivado/MyProject/POCexp\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Vivado/MyProject/POCexp/POCexp.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Xilinx/Vivado2020/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:06 . Memory (MB): peak = 1018.273 ; gain = 0.000
+update_compile_order -fileset sources_1
+file mkdir D:/Vivado/MyProject/POCexp/POCexp.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/Vivado/MyProject/POCexp/POCexp.srcs/sim_1/new/POCexp_TB.v w ]
+add_files -fileset sim_1 D:/Vivado/MyProject/POCexp/POCexp.srcs/sim_1/new/POCexp_TB.v
+update_compile_order -fileset sim_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri Mar 18 17:38:21 2022] Launched synth_1...
+Run output will be captured here: D:/Vivado/MyProject/POCexp/POCexp.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7k70tfbv676-1
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1056.863 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1139.801 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 1268.059 ; gain = 249.785
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri Mar 18 18:12:24 2022] Launched synth_1...
+Run output will be captured here: D:/Vivado/MyProject/POCexp/POCexp.runs/synth_1/runme.log
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7k70tfbv676-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1793.637 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1793.637 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+close_design
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'POCexp' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj POCexp_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/POC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module POC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/Printer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Printer
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/Processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/POCexp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module POCexp
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim'
+"xelab -wto f547be8816d94f99a0146eda048c2409 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot POCexp_behav xil_defaultlib.POCexp xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Xilinx/Vivado2020/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto f547be8816d94f99a0146eda048c2409 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot POCexp_behav xil_defaultlib.POCexp xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Processor
+Compiling module xil_defaultlib.POC
+Compiling module xil_defaultlib.Printer
+Compiling module xil_defaultlib.POCexp
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot POCexp_behav
+
+****** Webtalk v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim/xsim.dir/POCexp_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim/xsim.dir/POCexp_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Mar 18 18:46:50 2022. For additional details about this file, please refer to the WebTalk help file at D:/Vivado/Xilinx/Vivado2020/Vivado/2020.1/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 113.820 ; gain = 17.570
+INFO: [Common 17-206] Exiting Webtalk at Fri Mar 18 18:46:50 2022...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 2063.391 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "POCexp_behav -key {Behavioral:sim_1:Functional:POCexp} -tclbatch {POCexp.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source POCexp.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'POCexp_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:18 . Memory (MB): peak = 2063.391 ; gain = 0.000
+update_compile_order -fileset sim_1
+run all
+run all
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 2063.391 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'POCexp_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj POCexp_TB_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sim_1/new/POCexp_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module POCexp_TB
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim'
+"xelab -wto f547be8816d94f99a0146eda048c2409 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot POCexp_TB_behav xil_defaultlib.POCexp_TB xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Xilinx/Vivado2020/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto f547be8816d94f99a0146eda048c2409 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot POCexp_TB_behav xil_defaultlib.POCexp_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Processor
+Compiling module xil_defaultlib.POC
+Compiling module xil_defaultlib.Printer
+Compiling module xil_defaultlib.POCexp
+Compiling module xil_defaultlib.POCexp_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot POCexp_TB_behav
+
+****** Webtalk v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim/xsim.dir/POCexp_TB_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim/xsim.dir/POCexp_TB_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Mar 18 18:49:16 2022. For additional details about this file, please refer to the WebTalk help file at D:/Vivado/Xilinx/Vivado2020/Vivado/2020.1/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 113.895 ; gain = 17.664
+INFO: [Common 17-206] Exiting Webtalk at Fri Mar 18 18:49:16 2022...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 2063.391 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "POCexp_TB_behav -key {Behavioral:sim_1:Functional:POCexp_TB} -tclbatch {POCexp_TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source POCexp_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'POCexp_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 2063.391 ; gain = 0.000
+run all
+$stop called at time : 1206 ns : File "D:/Vivado/MyProject/POCexp/POCexp.srcs/sim_1/new/POCexp_TB.v" Line 70
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 2063.391 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'POCexp_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj POCexp_TB_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/POC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module POC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/POCexp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module POCexp
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/Printer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Printer
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/Processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sim_1/new/POCexp_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module POCexp_TB
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim'
+"xelab -wto f547be8816d94f99a0146eda048c2409 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot POCexp_TB_behav xil_defaultlib.POCexp_TB xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Xilinx/Vivado2020/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto f547be8816d94f99a0146eda048c2409 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot POCexp_TB_behav xil_defaultlib.POCexp_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Processor
+Compiling module xil_defaultlib.POC
+Compiling module xil_defaultlib.Printer
+Compiling module xil_defaultlib.POCexp
+Compiling module xil_defaultlib.POCexp_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot POCexp_TB_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "POCexp_TB_behav -key {Behavioral:sim_1:Functional:POCexp_TB} -tclbatch {POCexp_TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source POCexp_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'POCexp_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 2063.391 ; gain = 0.000
+run all
+$stop called at time : 6030 ns : File "D:/Vivado/MyProject/POCexp/POCexp.srcs/sim_1/new/POCexp_TB.v" Line 70
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'POCexp_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj POCexp_TB_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/POC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module POC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/POCexp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module POCexp
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/Printer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Printer
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/Processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sim_1/new/POCexp_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module POCexp_TB
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim'
+"xelab -wto f547be8816d94f99a0146eda048c2409 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot POCexp_TB_behav xil_defaultlib.POCexp_TB xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Xilinx/Vivado2020/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto f547be8816d94f99a0146eda048c2409 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot POCexp_TB_behav xil_defaultlib.POCexp_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Processor
+Compiling module xil_defaultlib.POC
+Compiling module xil_defaultlib.Printer
+Compiling module xil_defaultlib.POCexp
+Compiling module xil_defaultlib.POCexp_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot POCexp_TB_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "POCexp_TB_behav -key {Behavioral:sim_1:Functional:POCexp_TB} -tclbatch {POCexp_TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source POCexp_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'POCexp_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 2063.391 ; gain = 0.000
+run all
+$stop called at time : 6030 ns : File "D:/Vivado/MyProject/POCexp/POCexp.srcs/sim_1/new/POCexp_TB.v" Line 70
+current_wave_config {Untitled 4}
+Untitled 4
+add_wave {{/POCexp_TB/u_POCexp/u_Processor/ADDR}} 
+current_wave_config {Untitled 4}
+Untitled 4
+add_wave {{/POCexp_TB/u_POCexp/u_Processor/RW}} 
+current_wave_config {Untitled 4}
+Untitled 4
+add_wave {{/POCexp_TB/u_POCexp/u_Processor/handle}} 
+current_wave_config {Untitled 4}
+Untitled 4
+add_wave {{/POCexp_TB/u_POCexp/u_Processor/data}} 
+current_wave_config {Untitled 4}
+Untitled 4
+add_wave {{/POCexp_TB/u_POCexp/u_Processor/Dout}} 
+current_wave_config {Untitled 4}
+Untitled 4
+add_wave {{/POCexp_TB/u_POCexp/u_Processor/Din}} 
+run all
+run: Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 2063.391 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'POCexp_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj POCexp_TB_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim'
+"xelab -wto f547be8816d94f99a0146eda048c2409 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot POCexp_TB_behav xil_defaultlib.POCexp_TB xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Xilinx/Vivado2020/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto f547be8816d94f99a0146eda048c2409 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot POCexp_TB_behav xil_defaultlib.POCexp_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2063.391 ; gain = 0.000
+run all
+$stop called at time : 6030 ns : File "D:/Vivado/MyProject/POCexp/POCexp.srcs/sim_1/new/POCexp_TB.v" Line 70
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'POCexp_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj POCexp_TB_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/POC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module POC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/POCexp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module POCexp
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/Printer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Printer
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/Processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sim_1/new/POCexp_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module POCexp_TB
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim'
+"xelab -wto f547be8816d94f99a0146eda048c2409 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot POCexp_TB_behav xil_defaultlib.POCexp_TB xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Xilinx/Vivado2020/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto f547be8816d94f99a0146eda048c2409 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot POCexp_TB_behav xil_defaultlib.POCexp_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Processor
+Compiling module xil_defaultlib.POC
+Compiling module xil_defaultlib.Printer
+Compiling module xil_defaultlib.POCexp
+Compiling module xil_defaultlib.POCexp_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot POCexp_TB_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "POCexp_TB_behav -key {Behavioral:sim_1:Functional:POCexp_TB} -tclbatch {POCexp_TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source POCexp_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'POCexp_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 2063.391 ; gain = 0.000
+current_wave_config {Untitled 5}
+Untitled 5
+add_wave {{/POCexp_TB/u_POCexp/RW}} 
+current_wave_config {Untitled 5}
+Untitled 5
+add_wave {{/POCexp_TB/u_POCexp/IRQ}} 
+current_wave_config {Untitled 5}
+Untitled 5
+add_wave {{/POCexp_TB/u_POCexp/RDY}} 
+current_wave_config {Untitled 5}
+Untitled 5
+add_wave {{/POCexp_TB/u_POCexp/Din}} 
+current_wave_config {Untitled 5}
+Untitled 5
+add_wave {{/POCexp_TB/u_POCexp/Dout}} 
+current_wave_config {Untitled 5}
+Untitled 5
+add_wave {{/POCexp_TB/u_POCexp/TR}} 
+current_wave_config {Untitled 5}
+Untitled 5
+add_wave {{/POCexp_TB/u_POCexp/u_Processor/ADDR}} 
+run all
+$stop called at time : 6180 ns : File "D:/Vivado/MyProject/POCexp/POCexp.srcs/sim_1/new/POCexp_TB.v" Line 71
+current_wave_config {Untitled 5}
+Untitled 5
+add_wave {{/POCexp_TB/u_POCexp/u_Processor/handle}} 
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'POCexp_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj POCexp_TB_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/POC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module POC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/POCexp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module POCexp
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/Printer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Printer
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/Processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sim_1/new/POCexp_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module POCexp_TB
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim'
+"xelab -wto f547be8816d94f99a0146eda048c2409 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot POCexp_TB_behav xil_defaultlib.POCexp_TB xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Xilinx/Vivado2020/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto f547be8816d94f99a0146eda048c2409 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot POCexp_TB_behav xil_defaultlib.POCexp_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Processor
+Compiling module xil_defaultlib.POC
+Compiling module xil_defaultlib.Printer
+Compiling module xil_defaultlib.POCexp
+Compiling module xil_defaultlib.POCexp_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot POCexp_TB_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "POCexp_TB_behav -key {Behavioral:sim_1:Functional:POCexp_TB} -tclbatch {POCexp_TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source POCexp_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'POCexp_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 2063.391 ; gain = 0.000
+run all
+$stop called at time : 6180 ns : File "D:/Vivado/MyProject/POCexp/POCexp.srcs/sim_1/new/POCexp_TB.v" Line 71
+current_wave_config {Untitled 6}
+Untitled 6
+add_wave {{/POCexp_TB/u_POCexp/u_Processor/IRQ}} 
+current_wave_config {Untitled 6}
+Untitled 6
+add_wave {{/POCexp_TB/u_POCexp/u_Processor/RW}} 
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'POCexp_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj POCexp_TB_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/POC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module POC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/POCexp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module POCexp
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/Printer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Printer
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/Processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sim_1/new/POCexp_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module POCexp_TB
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim'
+"xelab -wto f547be8816d94f99a0146eda048c2409 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot POCexp_TB_behav xil_defaultlib.POCexp_TB xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Xilinx/Vivado2020/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto f547be8816d94f99a0146eda048c2409 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot POCexp_TB_behav xil_defaultlib.POCexp_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Processor
+Compiling module xil_defaultlib.POC
+Compiling module xil_defaultlib.Printer
+Compiling module xil_defaultlib.POCexp
+Compiling module xil_defaultlib.POCexp_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot POCexp_TB_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 2063.391 ; gain = 0.000
+run all
+$stop called at time : 6180 ns : File "D:/Vivado/MyProject/POCexp/POCexp.srcs/sim_1/new/POCexp_TB.v" Line 71
+current_wave_config {Untitled 6}
+Untitled 6
+add_wave {{/POCexp_TB/u_POCexp/u_Processor/ADDR}} 
+current_wave_config {Untitled 6}
+Untitled 6
+add_wave {{/POCexp_TB/u_POCexp/u_Processor/Din}} 
+current_wave_config {Untitled 6}
+Untitled 6
+add_wave {{/POCexp_TB/u_POCexp/u_Processor/handle}} 
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'POCexp_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj POCexp_TB_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/POC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module POC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/POCexp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module POCexp
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/Printer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Printer
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/Processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sim_1/new/POCexp_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module POCexp_TB
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim'
+"xelab -wto f547be8816d94f99a0146eda048c2409 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot POCexp_TB_behav xil_defaultlib.POCexp_TB xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Xilinx/Vivado2020/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto f547be8816d94f99a0146eda048c2409 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot POCexp_TB_behav xil_defaultlib.POCexp_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Processor
+Compiling module xil_defaultlib.POC
+Compiling module xil_defaultlib.Printer
+Compiling module xil_defaultlib.POCexp
+Compiling module xil_defaultlib.POCexp_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot POCexp_TB_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2063.391 ; gain = 0.000
+run all
+$stop called at time : 6180 ns : File "D:/Vivado/MyProject/POCexp/POCexp.srcs/sim_1/new/POCexp_TB.v" Line 71
+current_wave_config {Untitled 6}
+Untitled 6
+add_wave {{/POCexp_TB/u_POCexp/u_POC/IRQ}} 
+current_wave_config {Untitled 6}
+Untitled 6
+add_wave {{/POCexp_TB/u_POCexp/u_Processor/Din_reg}} 
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'POCexp_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj POCexp_TB_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/POC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module POC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/POCexp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module POCexp
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/Printer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Printer
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/Processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sim_1/new/POCexp_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module POCexp_TB
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim'
+"xelab -wto f547be8816d94f99a0146eda048c2409 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot POCexp_TB_behav xil_defaultlib.POCexp_TB xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Xilinx/Vivado2020/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto f547be8816d94f99a0146eda048c2409 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot POCexp_TB_behav xil_defaultlib.POCexp_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Processor
+Compiling module xil_defaultlib.POC
+Compiling module xil_defaultlib.Printer
+Compiling module xil_defaultlib.POCexp
+Compiling module xil_defaultlib.POCexp_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot POCexp_TB_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 2063.391 ; gain = 0.000
+run all
+$stop called at time : 6180 ns : File "D:/Vivado/MyProject/POCexp/POCexp.srcs/sim_1/new/POCexp_TB.v" Line 71
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'POCexp_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj POCexp_TB_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/POC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module POC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/POCexp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module POCexp
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/Printer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Printer
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/Processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sim_1/new/POCexp_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module POCexp_TB
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim'
+"xelab -wto f547be8816d94f99a0146eda048c2409 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot POCexp_TB_behav xil_defaultlib.POCexp_TB xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Xilinx/Vivado2020/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto f547be8816d94f99a0146eda048c2409 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot POCexp_TB_behav xil_defaultlib.POCexp_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Processor
+Compiling module xil_defaultlib.POC
+Compiling module xil_defaultlib.Printer
+Compiling module xil_defaultlib.POCexp
+Compiling module xil_defaultlib.POCexp_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot POCexp_TB_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 2063.391 ; gain = 0.000
+run all
+$stop called at time : 6180 ns : File "D:/Vivado/MyProject/POCexp/POCexp.srcs/sim_1/new/POCexp_TB.v" Line 71
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'POCexp_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj POCexp_TB_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/POC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module POC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/POCexp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module POCexp
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/Printer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Printer
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/Processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sim_1/new/POCexp_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module POCexp_TB
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim'
+"xelab -wto f547be8816d94f99a0146eda048c2409 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot POCexp_TB_behav xil_defaultlib.POCexp_TB xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Xilinx/Vivado2020/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto f547be8816d94f99a0146eda048c2409 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot POCexp_TB_behav xil_defaultlib.POCexp_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Processor
+Compiling module xil_defaultlib.POC
+Compiling module xil_defaultlib.Printer
+Compiling module xil_defaultlib.POCexp
+Compiling module xil_defaultlib.POCexp_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot POCexp_TB_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 2063.391 ; gain = 0.000
+run all
+$stop called at time : 6240 ns : File "D:/Vivado/MyProject/POCexp/POCexp.srcs/sim_1/new/POCexp_TB.v" Line 73
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'POCexp_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj POCexp_TB_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/POC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module POC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/POCexp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module POCexp
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/Printer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Printer
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/Processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sim_1/new/POCexp_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module POCexp_TB
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim'
+"xelab -wto f547be8816d94f99a0146eda048c2409 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot POCexp_TB_behav xil_defaultlib.POCexp_TB xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Xilinx/Vivado2020/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto f547be8816d94f99a0146eda048c2409 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot POCexp_TB_behav xil_defaultlib.POCexp_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Processor
+Compiling module xil_defaultlib.POC
+Compiling module xil_defaultlib.Printer
+Compiling module xil_defaultlib.POCexp
+Compiling module xil_defaultlib.POCexp_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot POCexp_TB_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 2063.391 ; gain = 0.000
+run all
+$stop called at time : 6240 ns : File "D:/Vivado/MyProject/POCexp/POCexp.srcs/sim_1/new/POCexp_TB.v" Line 73
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'POCexp_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj POCexp_TB_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/POC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module POC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/POCexp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module POCexp
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/Printer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Printer
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/Processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sim_1/new/POCexp_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module POCexp_TB
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim'
+"xelab -wto f547be8816d94f99a0146eda048c2409 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot POCexp_TB_behav xil_defaultlib.POCexp_TB xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Xilinx/Vivado2020/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto f547be8816d94f99a0146eda048c2409 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot POCexp_TB_behav xil_defaultlib.POCexp_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Processor
+Compiling module xil_defaultlib.POC
+Compiling module xil_defaultlib.Printer
+Compiling module xil_defaultlib.POCexp
+Compiling module xil_defaultlib.POCexp_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot POCexp_TB_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 2063.391 ; gain = 0.000
+run all
+$stop called at time : 6240 ns : File "D:/Vivado/MyProject/POCexp/POCexp.srcs/sim_1/new/POCexp_TB.v" Line 73
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 18 21:50:17 2022...

@@ -1,0 +1,368 @@
+
+*** Running vivado
+    with args -log cpu_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source cpu_top.tcl
+
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source cpu_top.tcl -notrace
+Command: synth_design -top cpu_top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 29252
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1020.270 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'cpu_top' [D:/Vivado/MyProject/CPU_sim/CPU_sim.srcs/sources_1/new/cpu_top.v:23]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/Vivado/MyProject/CPU_sim/CPU_sim.srcs/sources_1/new/cpu_top.v:85]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [D:/Vivado/MyProject/CPU_sim/CPU_sim.runs/synth_1/.Xil/Vivado-31412-DESKTOP-EDM7BOD/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (1#1) [D:/Vivado/MyProject/CPU_sim/CPU_sim.runs/synth_1/.Xil/Vivado-31412-DESKTOP-EDM7BOD/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ram' [D:/Vivado/MyProject/CPU_sim/CPU_sim.srcs/sources_1/new/ram.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ram_mem' [D:/Vivado/MyProject/CPU_sim/CPU_sim.runs/synth_1/.Xil/Vivado-31412-DESKTOP-EDM7BOD/realtime/ram_mem_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ram_mem' (2#1) [D:/Vivado/MyProject/CPU_sim/CPU_sim.runs/synth_1/.Xil/Vivado-31412-DESKTOP-EDM7BOD/realtime/ram_mem_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ram' (3#1) [D:/Vivado/MyProject/CPU_sim/CPU_sim.srcs/sources_1/new/ram.v:23]
+INFO: [Synth 8-6157] synthesizing module 'MAR' [D:/Vivado/MyProject/CPU_sim/CPU_sim.srcs/sources_1/new/MAR.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'MAR' (4#1) [D:/Vivado/MyProject/CPU_sim/CPU_sim.srcs/sources_1/new/MAR.v:22]
+INFO: [Synth 8-6157] synthesizing module 'MBR' [D:/Vivado/MyProject/CPU_sim/CPU_sim.srcs/sources_1/new/MBR.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'MBR' (5#1) [D:/Vivado/MyProject/CPU_sim/CPU_sim.srcs/sources_1/new/MBR.v:22]
+INFO: [Synth 8-6157] synthesizing module 'PC' [D:/Vivado/MyProject/CPU_sim/CPU_sim.srcs/sources_1/new/PC.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (6#1) [D:/Vivado/MyProject/CPU_sim/CPU_sim.srcs/sources_1/new/PC.v:22]
+INFO: [Synth 8-6157] synthesizing module 'IR' [D:/Vivado/MyProject/CPU_sim/CPU_sim.srcs/sources_1/new/IR.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'IR' (7#1) [D:/Vivado/MyProject/CPU_sim/CPU_sim.srcs/sources_1/new/IR.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ACC' [D:/Vivado/MyProject/CPU_sim/CPU_sim.srcs/sources_1/new/ACC.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'ACC' (8#1) [D:/Vivado/MyProject/CPU_sim/CPU_sim.srcs/sources_1/new/ACC.v:24]
+INFO: [Synth 8-6157] synthesizing module 'ControlUnit' [D:/Vivado/MyProject/CPU_sim/CPU_sim.srcs/sources_1/new/ControlUnit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'CAR' [D:/Vivado/MyProject/CPU_sim/CPU_sim.srcs/sources_1/new/CAR.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'CAR' (9#1) [D:/Vivado/MyProject/CPU_sim/CPU_sim.srcs/sources_1/new/CAR.v:22]
+INFO: [Synth 8-6157] synthesizing module 'ROM_cu' [D:/Vivado/MyProject/CPU_sim/CPU_sim.srcs/sources_1/new/ROM_cu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'rom_cm' [D:/Vivado/MyProject/CPU_sim/CPU_sim.runs/synth_1/.Xil/Vivado-31412-DESKTOP-EDM7BOD/realtime/rom_cm_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rom_cm' (10#1) [D:/Vivado/MyProject/CPU_sim/CPU_sim.runs/synth_1/.Xil/Vivado-31412-DESKTOP-EDM7BOD/realtime/rom_cm_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ROM_cu' (11#1) [D:/Vivado/MyProject/CPU_sim/CPU_sim.srcs/sources_1/new/ROM_cu.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ControlUnit' (12#1) [D:/Vivado/MyProject/CPU_sim/CPU_sim.srcs/sources_1/new/ControlUnit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'BR' [D:/Vivado/MyProject/CPU_sim/CPU_sim.srcs/sources_1/new/BR.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'BR' (13#1) [D:/Vivado/MyProject/CPU_sim/CPU_sim.srcs/sources_1/new/BR.v:22]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/Vivado/MyProject/CPU_sim/CPU_sim.srcs/sources_1/new/ALU.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (14#1) [D:/Vivado/MyProject/CPU_sim/CPU_sim.srcs/sources_1/new/ALU.v:22]
+INFO: [Synth 8-6157] synthesizing module 'LED' [D:/Vivado/MyProject/CPU_sim/CPU_sim.srcs/sources_1/new/LED.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/MyProject/CPU_sim/CPU_sim.srcs/sources_1/new/LED.v:58]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado/MyProject/CPU_sim/CPU_sim.srcs/sources_1/new/LED.v:72]
+INFO: [Synth 8-226] default block is never used [D:/Vivado/MyProject/CPU_sim/CPU_sim.srcs/sources_1/new/LED.v:85]
+INFO: [Synth 8-6155] done synthesizing module 'LED' (15#1) [D:/Vivado/MyProject/CPU_sim/CPU_sim.srcs/sources_1/new/LED.v:23]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_PC'. This will prevent further optimization [D:/Vivado/MyProject/CPU_sim/CPU_sim.srcs/sources_1/new/cpu_top.v:122]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_MAR'. This will prevent further optimization [D:/Vivado/MyProject/CPU_sim/CPU_sim.srcs/sources_1/new/cpu_top.v:102]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila'. This will prevent further optimization [D:/Vivado/MyProject/CPU_sim/CPU_sim.srcs/sources_1/new/cpu_top.v:85]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_ACC'. This will prevent further optimization [D:/Vivado/MyProject/CPU_sim/CPU_sim.srcs/sources_1/new/cpu_top.v:140]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_LED'. This will prevent further optimization [D:/Vivado/MyProject/CPU_sim/CPU_sim.srcs/sources_1/new/cpu_top.v:182]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_ALU'. This will prevent further optimization [D:/Vivado/MyProject/CPU_sim/CPU_sim.srcs/sources_1/new/cpu_top.v:171]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_MBR'. This will prevent further optimization [D:/Vivado/MyProject/CPU_sim/CPU_sim.srcs/sources_1/new/cpu_top.v:112]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_CU'. This will prevent further optimization [D:/Vivado/MyProject/CPU_sim/CPU_sim.srcs/sources_1/new/cpu_top.v:153]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_BR'. This will prevent further optimization [D:/Vivado/MyProject/CPU_sim/CPU_sim.srcs/sources_1/new/cpu_top.v:163]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_IR'. This will prevent further optimization [D:/Vivado/MyProject/CPU_sim/CPU_sim.srcs/sources_1/new/cpu_top.v:131]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_ram'. This will prevent further optimization [D:/Vivado/MyProject/CPU_sim/CPU_sim.srcs/sources_1/new/cpu_top.v:92]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_top' (16#1) [D:/Vivado/MyProject/CPU_sim/CPU_sim.srcs/sources_1/new/cpu_top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1020.270 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1020.270 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1020.270 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1020.270 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Vivado/MyProject/CPU_sim/CPU_sim.srcs/sources_1/ip/ram_mem/ram_mem/ram_mem_in_context.xdc] for cell 'u_ram/u_ram'
+Finished Parsing XDC File [d:/Vivado/MyProject/CPU_sim/CPU_sim.srcs/sources_1/ip/ram_mem/ram_mem/ram_mem_in_context.xdc] for cell 'u_ram/u_ram'
+Parsing XDC File [d:/Vivado/MyProject/CPU_sim/CPU_sim.srcs/sources_1/ip/rom_cm/rom_cm/rom_cm_in_context.xdc] for cell 'u_CU/u_ROM_cu/u_rom'
+Finished Parsing XDC File [d:/Vivado/MyProject/CPU_sim/CPU_sim.srcs/sources_1/ip/rom_cm/rom_cm/rom_cm_in_context.xdc] for cell 'u_CU/u_ROM_cu/u_rom'
+Parsing XDC File [d:/Vivado/MyProject/CPU_sim/CPU_sim.srcs/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'ila'
+Finished Parsing XDC File [d:/Vivado/MyProject/CPU_sim/CPU_sim.srcs/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'ila'
+Parsing XDC File [D:/Vivado/MyProject/CPU_sim/Nexys4DDR_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'SW[0]'. [D:/Vivado/MyProject/CPU_sim/Nexys4DDR_Master.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'SW[1]'. [D:/Vivado/MyProject/CPU_sim/Nexys4DDR_Master.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'SW[2]'. [D:/Vivado/MyProject/CPU_sim/Nexys4DDR_Master.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'SW[3]'. [D:/Vivado/MyProject/CPU_sim/Nexys4DDR_Master.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'SW[4]'. [D:/Vivado/MyProject/CPU_sim/Nexys4DDR_Master.xdc:17]
+WARNING: [Vivado 12-584] No ports matched 'SW[5]'. [D:/Vivado/MyProject/CPU_sim/Nexys4DDR_Master.xdc:18]
+WARNING: [Vivado 12-584] No ports matched 'SW[6]'. [D:/Vivado/MyProject/CPU_sim/Nexys4DDR_Master.xdc:19]
+WARNING: [Vivado 12-584] No ports matched 'SW[7]'. [D:/Vivado/MyProject/CPU_sim/Nexys4DDR_Master.xdc:20]
+WARNING: [Vivado 12-584] No ports matched 'SW[8]'. [D:/Vivado/MyProject/CPU_sim/Nexys4DDR_Master.xdc:21]
+WARNING: [Vivado 12-584] No ports matched 'SW[9]'. [D:/Vivado/MyProject/CPU_sim/Nexys4DDR_Master.xdc:22]
+WARNING: [Vivado 12-584] No ports matched 'SW[10]'. [D:/Vivado/MyProject/CPU_sim/Nexys4DDR_Master.xdc:23]
+WARNING: [Vivado 12-584] No ports matched 'SW[11]'. [D:/Vivado/MyProject/CPU_sim/Nexys4DDR_Master.xdc:24]
+WARNING: [Vivado 12-584] No ports matched 'SW[12]'. [D:/Vivado/MyProject/CPU_sim/Nexys4DDR_Master.xdc:25]
+WARNING: [Vivado 12-584] No ports matched 'SW[13]'. [D:/Vivado/MyProject/CPU_sim/Nexys4DDR_Master.xdc:26]
+WARNING: [Vivado 12-584] No ports matched 'SW[14]'. [D:/Vivado/MyProject/CPU_sim/Nexys4DDR_Master.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'SW[15]'. [D:/Vivado/MyProject/CPU_sim/Nexys4DDR_Master.xdc:28]
+WARNING: [Vivado 12-584] No ports matched 'LED[0]'. [D:/Vivado/MyProject/CPU_sim/Nexys4DDR_Master.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'LED[1]'. [D:/Vivado/MyProject/CPU_sim/Nexys4DDR_Master.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'LED[2]'. [D:/Vivado/MyProject/CPU_sim/Nexys4DDR_Master.xdc:35]
+WARNING: [Vivado 12-584] No ports matched 'LED[3]'. [D:/Vivado/MyProject/CPU_sim/Nexys4DDR_Master.xdc:36]
+WARNING: [Vivado 12-584] No ports matched 'LED[4]'. [D:/Vivado/MyProject/CPU_sim/Nexys4DDR_Master.xdc:37]
+WARNING: [Vivado 12-584] No ports matched 'LED[5]'. [D:/Vivado/MyProject/CPU_sim/Nexys4DDR_Master.xdc:38]
+WARNING: [Vivado 12-584] No ports matched 'LED[6]'. [D:/Vivado/MyProject/CPU_sim/Nexys4DDR_Master.xdc:39]
+WARNING: [Vivado 12-584] No ports matched 'LED[7]'. [D:/Vivado/MyProject/CPU_sim/Nexys4DDR_Master.xdc:40]
+WARNING: [Vivado 12-584] No ports matched 'LED[8]'. [D:/Vivado/MyProject/CPU_sim/Nexys4DDR_Master.xdc:41]
+WARNING: [Vivado 12-584] No ports matched 'LED[9]'. [D:/Vivado/MyProject/CPU_sim/Nexys4DDR_Master.xdc:42]
+WARNING: [Vivado 12-584] No ports matched 'LED[10]'. [D:/Vivado/MyProject/CPU_sim/Nexys4DDR_Master.xdc:43]
+WARNING: [Vivado 12-584] No ports matched 'LED[11]'. [D:/Vivado/MyProject/CPU_sim/Nexys4DDR_Master.xdc:44]
+WARNING: [Vivado 12-584] No ports matched 'LED[12]'. [D:/Vivado/MyProject/CPU_sim/Nexys4DDR_Master.xdc:45]
+WARNING: [Vivado 12-584] No ports matched 'LED[13]'. [D:/Vivado/MyProject/CPU_sim/Nexys4DDR_Master.xdc:46]
+WARNING: [Vivado 12-584] No ports matched 'LED[14]'. [D:/Vivado/MyProject/CPU_sim/Nexys4DDR_Master.xdc:47]
+WARNING: [Vivado 12-584] No ports matched 'LED[15]'. [D:/Vivado/MyProject/CPU_sim/Nexys4DDR_Master.xdc:48]
+WARNING: [Vivado 12-584] No ports matched 'RGB1_Blue'. [D:/Vivado/MyProject/CPU_sim/Nexys4DDR_Master.xdc:50]
+WARNING: [Vivado 12-584] No ports matched 'RGB1_Green'. [D:/Vivado/MyProject/CPU_sim/Nexys4DDR_Master.xdc:51]
+WARNING: [Vivado 12-584] No ports matched 'RGB1_Red'. [D:/Vivado/MyProject/CPU_sim/Nexys4DDR_Master.xdc:52]
+WARNING: [Vivado 12-584] No ports matched 'RGB2_Blue'. [D:/Vivado/MyProject/CPU_sim/Nexys4DDR_Master.xdc:53]
+WARNING: [Vivado 12-584] No ports matched 'RGB2_Green'. [D:/Vivado/MyProject/CPU_sim/Nexys4DDR_Master.xdc:54]
+WARNING: [Vivado 12-584] No ports matched 'RGB2_Red'. [D:/Vivado/MyProject/CPU_sim/Nexys4DDR_Master.xdc:55]
+WARNING: [Vivado 12-584] No ports matched 'BTN[4]'. [D:/Vivado/MyProject/CPU_sim/Nexys4DDR_Master.xdc:84]
+WARNING: [Vivado 12-584] No ports matched 'BTN[0]'. [D:/Vivado/MyProject/CPU_sim/Nexys4DDR_Master.xdc:85]
+WARNING: [Vivado 12-584] No ports matched 'BTN[1]'. [D:/Vivado/MyProject/CPU_sim/Nexys4DDR_Master.xdc:86]
+WARNING: [Vivado 12-584] No ports matched 'BTN[2]'. [D:/Vivado/MyProject/CPU_sim/Nexys4DDR_Master.xdc:87]
+WARNING: [Vivado 12-584] No ports matched 'BTN[3]'. [D:/Vivado/MyProject/CPU_sim/Nexys4DDR_Master.xdc:88]
+WARNING: [Vivado 12-584] No ports matched 'micClk'. [D:/Vivado/MyProject/CPU_sim/Nexys4DDR_Master.xdc:206]
+WARNING: [Vivado 12-584] No ports matched 'micData'. [D:/Vivado/MyProject/CPU_sim/Nexys4DDR_Master.xdc:207]
+WARNING: [Vivado 12-584] No ports matched 'micLRSel'. [D:/Vivado/MyProject/CPU_sim/Nexys4DDR_Master.xdc:208]
+WARNING: [Vivado 12-584] No ports matched 'ampPWM'. [D:/Vivado/MyProject/CPU_sim/Nexys4DDR_Master.xdc:213]
+WARNING: [Vivado 12-584] No ports matched 'ampSD'. [D:/Vivado/MyProject/CPU_sim/Nexys4DDR_Master.xdc:214]
+WARNING: [Vivado 12-584] No ports matched 'UART_TXD'. [D:/Vivado/MyProject/CPU_sim/Nexys4DDR_Master.xdc:220]
+Finished Parsing XDC File [D:/Vivado/MyProject/CPU_sim/Nexys4DDR_Master.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/Vivado/MyProject/CPU_sim/Nexys4DDR_Master.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/cpu_top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Vivado/MyProject/CPU_sim/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/cpu_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/cpu_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/Vivado/MyProject/CPU_sim/CPU_sim.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/Vivado/MyProject/CPU_sim/CPU_sim.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1024.891 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1024.891 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1024.891 ; gain = 4.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1024.891 ; gain = 4.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for u_ram/u_ram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_CU/u_ROM_cu/u_rom. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ila. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1024.891 ; gain = 4.621
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'SSEG_AN_reg' [D:/Vivado/MyProject/CPU_sim/CPU_sim.srcs/sources_1/new/LED.v:59]
+WARNING: [Synth 8-327] inferring latch for variable 'data_1_reg' [D:/Vivado/MyProject/CPU_sim/CPU_sim.srcs/sources_1/new/LED.v:77]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1024.891 ; gain = 4.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   30 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 1     
+	   3 Input   16 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 1     
+	   3 Input    8 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 5     
+	                8 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input   16 Bit        Muxes := 3     
+	   2 Input    8 Bit        Muxes := 4     
+	   4 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 15    
+	  10 Input    1 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP mult_reg, operation Mode is: (A*B)'.
+DSP Report: register mult_reg is absorbed into DSP mult_reg.
+DSP Report: operator mult0 is absorbed into DSP mult_reg.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1024.891 ; gain = 4.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping	Report (see note below)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|ALU         | (A*B)'      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 1    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1044.312 ; gain = 24.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1063.949 ; gain = 43.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1067.809 ; gain = 47.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1074.871 ; gain = 54.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1074.871 ; gain = 54.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1074.871 ; gain = 54.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1074.871 ; gain = 54.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1074.871 ; gain = 54.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1074.871 ; gain = 54.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |ram_mem       |         1|
+|2     |rom_cm        |         1|
+|3     |ila_0         |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |ila     |     1|
+|2     |ram_mem |     1|
+|3     |rom_cm  |     1|
+|4     |BUFG    |     1|
+|5     |CARRY4  |    29|
+|6     |DSP48E1 |     1|
+|7     |LUT1    |    11|
+|8     |LUT2    |    42|
+|9     |LUT3    |    30|
+|10    |LUT4    |    35|
+|11    |LUT5    |    28|
+|12    |LUT6    |    92|
+|13    |FDCE    |    22|
+|14    |FDRE    |   133|
+|15    |LD      |     8|
+|16    |IBUF    |     2|
+|17    |OBUF    |    16|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1074.871 ; gain = 54.602
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 1074.871 ; gain = 49.980
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 1074.871 ; gain = 54.602
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1074.871 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 38 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 8 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1074.871 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  LD => LDCE (inverted pins: G): 8 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+61 Infos, 53 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1074.871 ; gain = 54.602
+INFO: [Common 17-1381] The checkpoint 'D:/Vivado/MyProject/CPU_sim/CPU_sim.runs/synth_1/cpu_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file cpu_top_utilization_synth.rpt -pb cpu_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat May 14 14:23:50 2022...

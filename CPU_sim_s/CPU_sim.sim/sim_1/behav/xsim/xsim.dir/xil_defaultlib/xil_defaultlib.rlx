@@ -1,0 +1,22 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+D:/Vivado/MyProject/CPU_sim_s/CPU_sim.sim/sim_1/behav/xsim/glbl.v,1590624368,verilog,,,,glbl,,,,,,,,
+D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sim_1/new/cpu_tb.v,1652510725,verilog,,,,cpu_tb,,,../../../../CPU_sim.srcs/sources_1/ip/clk_divide,,,,,
+D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/ip/ila_0/sim/ila_0.v,1652509156,verilog,,D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/ACC.v,,ila_0,,,../../../../CPU_sim.srcs/sources_1/ip/clk_divide,,,,,
+D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/ip/ram_mem/sim/ram_mem.v,1653893007,verilog,,D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/ip/ila_0/sim/ila_0.v,,ram_mem,,,../../../../CPU_sim.srcs/sources_1/ip/clk_divide,,,,,
+D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/ip/rom_cm/sim/rom_cm.v,1652456020,verilog,,D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/ip/ram_mem/sim/ram_mem.v,,rom_cm,,,../../../../CPU_sim.srcs/sources_1/ip/clk_divide,,,,,
+D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/ACC.v,1652421983,verilog,,D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/ALU.v,,ACC,,,../../../../CPU_sim.srcs/sources_1/ip/clk_divide,,,,,
+D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/ALU.v,1652443049,verilog,,D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/BR.v,,ALU,,,../../../../CPU_sim.srcs/sources_1/ip/clk_divide,,,,,
+D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/BR.v,1652402889,verilog,,D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/CAR.v,,BR,,,../../../../CPU_sim.srcs/sources_1/ip/clk_divide,,,,,
+D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/CAR.v,1652437703,verilog,,D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/ControlUnit.v,,CAR,,,../../../../CPU_sim.srcs/sources_1/ip/clk_divide,,,,,
+D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/ControlUnit.v,1652404066,verilog,,D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/IR.v,,ControlUnit,,,../../../../CPU_sim.srcs/sources_1/ip/clk_divide,,,,,
+D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/IR.v,1652367034,verilog,,D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/LED.v,,IR,,,../../../../CPU_sim.srcs/sources_1/ip/clk_divide,,,,,
+D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/LED.v,1652509374,verilog,,D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/MAR.v,,LED,,,../../../../CPU_sim.srcs/sources_1/ip/clk_divide,,,,,
+D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/MAR.v,1652422448,verilog,,D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/MBR.v,,MAR,,,../../../../CPU_sim.srcs/sources_1/ip/clk_divide,,,,,
+D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/MBR.v,1652418139,verilog,,D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/PC.v,,MBR,,,../../../../CPU_sim.srcs/sources_1/ip/clk_divide,,,,,
+D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/PC.v,1652367034,verilog,,D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/ROM_cu.v,,PC,,,../../../../CPU_sim.srcs/sources_1/ip/clk_divide,,,,,
+D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/ROM_cu.v,1652352412,verilog,,D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/cpu_top.v,,ROM_cu,,,../../../../CPU_sim.srcs/sources_1/ip/clk_divide,,,,,
+D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/cpu_top.v,1653898822,verilog,,D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/ram.v,,cpu_top,,,../../../../CPU_sim.srcs/sources_1/ip/clk_divide,,,,,
+D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/ram.v,1652360784,verilog,,D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sim_1/new/cpu_tb.v,,ram,,,../../../../CPU_sim.srcs/sources_1/ip/clk_divide,,,,,

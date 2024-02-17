@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Mar 15 14:32:02 2022
+# Process ID: 24104
+# Current directory: D:/Vivado/MyProject/POCexp
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4496 D:\Vivado\MyProject\POCexp\POCexp.xpr
+# Log file: D:/Vivado/MyProject/POCexp/vivado.log
+# Journal file: D:/Vivado/MyProject/POCexp\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Vivado/MyProject/POCexp/POCexp.xpr
+update_compile_order -fileset sources_1
+
+open_run synth_1 -name synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1

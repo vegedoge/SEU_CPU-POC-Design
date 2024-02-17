@@ -1,0 +1,10 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+D:/Vivado/MyProject/POCexp/POCexp.sim/sim_1/behav/xsim/glbl.v,1590624368,verilog,,,,glbl,,,,,,,,
+D:/Vivado/MyProject/POCexp/POCexp.srcs/sim_1/new/POCexp_TB.v,1647695915,verilog,,,,POCexp_TB,,,,,,,,
+D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/POC.v,1647694388,verilog,,D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/POCexp.v,,POC,,,,,,,,
+D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/POCexp.v,1647697058,verilog,,D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/Printer.v,,POCexp,,,,,,,,
+D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/Printer.v,1647678434,verilog,,D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/Processor.v,,Printer,,,,,,,,
+D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/Processor.v,1647695200,verilog,,D:/Vivado/MyProject/POCexp/POCexp.srcs/sim_1/new/POCexp_TB.v,,Processor,,,,,,,,

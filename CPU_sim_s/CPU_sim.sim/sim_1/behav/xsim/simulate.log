@@ -1,0 +1,9 @@
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module cpu_tb.u_cpu_top.u_ram.u_ram.inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module cpu_tb.u_cpu_top.u_CU.u_ROM_cu.u_rom.inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+$stop called at time : 3020 ns : File "D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sim_1/new/cpu_tb.v" Line 53

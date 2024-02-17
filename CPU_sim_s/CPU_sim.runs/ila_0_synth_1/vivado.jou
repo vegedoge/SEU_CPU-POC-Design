@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sat May 14 14:19:21 2022
+# Process ID: 5804
+# Current directory: D:/Vivado/MyProject/CPU_sim/CPU_sim.runs/ila_0_synth_1
+# Command line: vivado.exe -log ila_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ila_0.tcl
+# Log file: D:/Vivado/MyProject/CPU_sim/CPU_sim.runs/ila_0_synth_1/ila_0.vds
+# Journal file: D:/Vivado/MyProject/CPU_sim/CPU_sim.runs/ila_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source ila_0.tcl -notrace

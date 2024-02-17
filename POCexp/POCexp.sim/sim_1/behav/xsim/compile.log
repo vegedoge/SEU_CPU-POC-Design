@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/POC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module POC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/POCexp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module POCexp
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/Printer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Printer
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sources_1/new/Processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/POCexp/POCexp.srcs/sim_1/new/POCexp_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module POCexp_TB
