@@ -1,35 +1,37 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/ip/rom_cm/sim/rom_cm.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/SEU_CPU-POC_Design/CPU_sim_s/CPU_sim.srcs/sources_1/ip/rom_cm/sim/rom_cm.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module rom_cm
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/ip/ram_mem/sim/ram_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/SEU_CPU-POC_Design/CPU_sim_s/CPU_sim.srcs/sources_1/ip/ram_mem/sim/ram_mem.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module ram_mem
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/ip/ila_0/sim/ila_0.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/SEU_CPU-POC_Design/CPU_sim_s/CPU_sim.srcs/sources_1/ip/ila_0/sim/ila_0.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module ila_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/ACC.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/SEU_CPU-POC_Design/CPU_sim_s/CPU_sim.srcs/sources_1/new/ACC.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module ACC
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/SEU_CPU-POC_Design/CPU_sim_s/CPU_sim.srcs/sources_1/new/ALU.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module ALU
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/BR.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/SEU_CPU-POC_Design/CPU_sim_s/CPU_sim.srcs/sources_1/new/BR.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module BR
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/CAR.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/SEU_CPU-POC_Design/CPU_sim_s/CPU_sim.srcs/sources_1/new/CAR.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module CAR
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/SEU_CPU-POC_Design/CPU_sim_s/CPU_sim.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module ControlUnit
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/IR.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/SEU_CPU-POC_Design/CPU_sim_s/CPU_sim.srcs/sources_1/new/IR.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module IR
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/LED.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/SEU_CPU-POC_Design/CPU_sim_s/CPU_sim.srcs/sources_1/new/LED.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module LED
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/MAR.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/SEU_CPU-POC_Design/CPU_sim_s/CPU_sim.srcs/sources_1/new/MAR.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module MAR
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/MBR.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/SEU_CPU-POC_Design/CPU_sim_s/CPU_sim.srcs/sources_1/new/MBR.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module MBR
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/SEU_CPU-POC_Design/CPU_sim_s/CPU_sim.srcs/sources_1/new/PC.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module PC
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/ROM_cu.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/SEU_CPU-POC_Design/CPU_sim_s/CPU_sim.srcs/sources_1/new/ROM_cu.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module ROM_cu
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/cpu_top.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/SEU_CPU-POC_Design/CPU_sim_s/CPU_sim.srcs/sources_1/new/cpu_top.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module cpu_top
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/ram.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/SEU_CPU-POC_Design/CPU_sim_s/CPU_sim.srcs/sources_1/new/ram.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module ram
-INFO: [VRFC 10-2458] undeclared symbol wea, assumed default net type wire [D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sources_1/new/ram.v:37]
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/CPU_sim_s/CPU_sim.srcs/sim_1/new/cpu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-2458] undeclared symbol wea, assumed default net type wire [D:/Vivado/MyProject/SEU_CPU-POC_Design/CPU_sim_s/CPU_sim.srcs/sources_1/new/ram.v:37]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/SEU_CPU-POC_Design/CPU_sim_s/CPU_sim.srcs/sim_1/new/cpu_tb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module cpu_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/MyProject/SEU_CPU-POC_Design/CPU_sim_s/CPU_sim.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
